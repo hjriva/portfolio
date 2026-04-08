@@ -23,3 +23,24 @@ nav {
 #ctt_nmem {
     margin: 4px;
 }
+
+.projectdiv {
+    border: black solid 1px;
+    max-height: 170px;
+    max-width: 300px;
+    border-radius: 4px;
+    padding: 8px;
+    margin: 10px;
+}
+
+/*.projetosdiv {
+    display: grid;
+}
+
+*/
+
+#container {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
