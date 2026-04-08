@@ -1,8 +1,25 @@
+* {
+    font-family: monospace;
+}
+
 img {
     max-height: 120px;
     max-width: 120px;
 }
 
 header {
-    display: flex;
+    display: flex
+}
+
+nav {
+    margin: 5px 2px;
+}
+
+#descr {
+    margin: 10px
+}
+
+
+#ctt_nmem {
+    margin: 4px;
 }
