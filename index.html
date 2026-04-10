@@ -5,27 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>portfólio hjriva</title>
     <link rel="stylesheet" href="estilos\style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
+    <div id="container">
+        <div id="containerup">
     <header>
-    <img src="imgs\file.enc" alt="">
+    <img src="imgs\profilepicture.jpg" alt="">
     <div id="descr">
-    <h1>Portfólio de Helena Riva &lt;/&gt;</h1>
+    <h1>Portfólio <br> de Helena Riva &lt;/&gt;</h1>
         <h3>RS, Brasil</h3>
     </div>
     </header>
     <div id="consolediv">
-        <nav> <a href="index.html">Sobre mim</a> | <a href="paginas\contato.html">Contato</a> | <a href="paginas\skills.html">Habilidades</a></nav>
-        <section>
-        <h3>hjriva&gt; Desenvolvedora fullstack em formação</h3>
+        <nav> <span id="homespan"> <a href="index.html">Sobre mim</a></span>  <span id="cttlink"id="cttspan">Contato</span> <span id="hablink">Habilidades</a> </nav>
+        <section id="consolecontent">
+        <h3>hjriva <i class="fa-solid fa-terminal"></i> Desenvolvedora fullstack em formação</h3>
         <p>Estudante de Análise e Desenvolvimento de Sistemas</p>
-       
-        <p><a href="#" download>Baixar currículo em PDF</a></p>
-        <p><a href="https://github.com/hjriva" target="_blank">Acessar meu perfil no Github</a></p>
+        <p>Essa página tem o propósito de apresentar um pouco das minhas habilidades e projetos. </p>
+
+        <div id="iconsdiv">
+        <i class="fa-brands fa-square-js" id="jsicon"></i>
+        <i class="fa-brands fa-html5" id="htmlicon"></i>
+        <i class="fa-brands fa-css3-alt" id="cssicon"></i>
+        <i class="fa-solid fa-database" id="databaseicon"></i>
+        <i class="fa-brands fa-node-js" id="nodeicon"></i>
+        <i class="fa-brands fa-python" id="pythonicon"></i>
+        </div>
+        
+        <p><a href="#" download> <i class="fa-solid fa-download"></i> Baixar currículo em PDF</a></p>
+        <p><a href="https://github.com/hjriva" target="_blank"> <i class="fa-brands fa-github"></i> Acessar meu perfil no Github</a></p>
         </section>
     </div>
+    </div>
 
-      <article>
+    <article>
         <div class="projectdiv">
         <h3>Lista de afazeres</h3>
         <span>HTML</span>
@@ -62,5 +76,7 @@
 
 </div>
     </article>
+      </div>
+<script src="scripts\script.js"></script>
 </body>
 </html>

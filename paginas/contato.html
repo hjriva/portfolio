@@ -7,18 +7,10 @@
     <title>Contato</title>
 </head>
 <body>
-    <header>
-        <img src="..\imgs\file.enc" alt="">
-        <div id="descr">
-        <h1>Portfólio de Helena Riva &lt;/&gt; </h1>
-            <h3>RS, Brasil</h3>
-        </div>
-        </header>
     
-        <div id="consolediv">
-            <nav> <a href="..\index.html">Sobre mim</a> | <a href="contato.html">Contato</a> | <a href="skills.html">Habilidades</a></nav>
-    <h2>Contate-me:</h2>
-    <form action="">
+    <h2 id="h2contato">Contate-me:</h2>
+    <form action="https://api.staticforms.dev/submit" method="POST">
+        <input type="hidden" name="apiKey" value="#"/>
 
         <div id="ctt_nmem">
     <label for="nome_ctt" name="nome">Nome:</label>
@@ -32,10 +24,15 @@
 
 <div id="ctt_msg">
     <label for="mensagem_ctt">Mensagem:</label>
-    <textarea name="mensagem" id="mensagem_ctt" cols="30" rows="10"></textarea>
+    <textarea name="mensagem" id="mensagem_ctt" cols="30" rows="5"></textarea>
 
-    <input type="button" value="Enviar">
+    <div id="botaoenviar">
+    <input type="submit" value="Enviar">
+    </div>
+    
 </div>
+
+
 
 </form>
 </body>
