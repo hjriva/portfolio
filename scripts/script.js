@@ -15,5 +15,5 @@ function dirPag(pag, guia) {
 let consolecontent = window.document.getElementById('consolecontent')
 let cttlink = window.document.getElementById('cttlink')
 let hablink = window.document.getElementById('hablink')
-cttlink.addEventListener('click', () => dirPag('paginas/contato.html', cttlink))
-hablink.addEventListener('click', () => dirPag('paginas/skills.html', hablink))
+cttlink.addEventListener('click', (e) => {e.preventDefault(); dirPag('paginas/contato.html', cttlink)})
+hablink.addEventListener('click', (e) => {e.preventDefault(); dirPag('paginas/skills.html', hablink)})

@@ -1,39 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../estilos/stylemob.css">
     <title>Contato</title>
 </head>
-<body>
-    
-    <h2 id="h2contato">Contate-me:</h2>
+<body>         
+    <h1 id="h1contato">Contate-me:</h1>
     <form action="https://api.staticforms.dev/submit" method="POST">
         <input type="hidden" name="apiKey" value="#"/>
-
-        <div id="ctt_nmem">
-    <label for="nome_ctt" name="nome">Nome:</label>
-    <input type="text" name="nome" id="nome_ctt">
-
-
-
-    <label for="email_ctt">E-mail:</label>
-    <input type="email" name="email" id="email_ctt" required>
-</div>
-
-<div id="ctt_msg">
-    <label for="mensagem_ctt">Mensagem:</label>
-    <textarea name="mensagem" id="mensagem_ctt" cols="30" rows="5" required></textarea>
-
-    <div id="botaoenviar">
-    <input type="submit" value="Enviar">
-    </div>
     
-</div>
+    <div id="ctt_nmem">
+        <label for="nome_ctt" name="nome">Nome:</label>
+        <input type="text" name="nome" id="nome_ctt">
+        <label for="email_ctt">E-mail:</label>
+        <input type="email" name="email" id="email_ctt" required>
+    </div>
 
-
-
+    <div id="ctt_msg">
+        <label for="mensagem_ctt">Mensagem:</label>
+        <textarea name="mensagem" id="mensagem_ctt" cols="30" rows="5" required></textarea>
+        <div id="botaoenviar">
+        <input type="submit" value="Enviar">
+    </div>
 </form>
 </body>
 </html>
