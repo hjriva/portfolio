@@ -17,20 +17,16 @@ a {
 /*Primeiros dois elementos:*/
 #containerup {
     display: flex;
-    position: relative;
-    height: 80vh; 
+    flex-direction: column;    
 }
 
 /* Header*/ 
 header {
     margin: 15px 5px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: end;   
-    position: absolute;
-    top: 50%;
-    left: calc(50% - 470px);
-    transform: translate(-50%, -50%);        
+    margin: 15px auto       
 }
 
 img {
@@ -41,7 +37,7 @@ img {
 
 #descr {
     margin: 5px;
-    text-align: right;  
+    text-align: left;  
 }
 
 #descr > h3, h1 {
@@ -55,10 +51,7 @@ img {
     height: 490px;
     display: flex;
     flex-direction: column;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    margin: auto;
 }
 
 nav {
@@ -133,6 +126,7 @@ section > p > a:hover {
    color: #8a8989;;
 }
 
+
 /*Inputs da página de contato*/
 
 #ctt_nmem {
@@ -170,6 +164,7 @@ display: block;
 text-align: center;
 margin-bottom: 5px;
 }
+
 /*Página de habilidades:*/
 
 #lista {
@@ -190,81 +185,56 @@ article > h2 {
 }
 
 /*Media queries*/
+@media (max-width: 713px) and (min-width:250px) {
+        #consolediv {
+        width: 90vw;
+        max-height: 100vh;
+        }
 
-@media (max-width: 1140px) {   
-    #containerup {
-         
-
-
-    display: flex;
-    flex-direction: column;    
+        #containerup {
+            height: auto;
+            max-height: 90vh;
+            width: auto;
+        }
+        * {
+            font-size: 15px;
+        }
     }
 
+   @media (max-width: 249px) {
     #consolediv {
-    width: 95vw;
-    max-height: 100vh;
-    top: calc(50% + 75px);
-    left: 50%;
-    transform: translate(-50%, -50%); 
+        min-width: 409px;
     }
-    header {
-        position: static;
-        display: flex;
-        flex-direction: row; 
-        top: auto;
-        left: auto;
-        transform: none;  
-        margin: 15px auto  
-        
-    }
-    #descr {
-        display: block;
-        text-align: left; 
-    }
-
-    #descr > img {
-        display: block;
-    }
-
-   
-    #ctt_nmem > input, label {
-        display: block;
-        margin: 10px auto;
-    }
-    #ctt_nmem > label {
-        text-align: center;
-    }
-    article {
-        display: block;
-    }
-}
-
-@media (max-width: 1139px) and (min-height: 820px) {
-    #containerup {
-        height: 63vh;
-    }
-}
-
-@media (max-width: 1130px) {
-   
-    #consolediv {
-    width: 95vw;
-    max-height: 100vh;
-    top: calc(50% + 75px);
-    left: 50%;
-    transform: translate(-50%, -50%); 
-    }
-}
-
-@media (max-width: 370px) {
-    #containerup {
-        height: min-content;
-    }
-    #consolediv {
-        height: 550px;
-        position: relative;
-        top: auto;
-        transform: none;
-        left: auto;
    }
+
+   @media (min-width: 1150px) {
+    #consolediv {
+    background-color: black;
+    width: 700px;
+    height: 490px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
+
+    #containerup {
+    display: flex;
+    position: relative;
+    height: 80vh; 
+}
+
+header {
+    margin: 15px 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;   
+    position: absolute;
+    top: 50%;
+    left: calc(50% - 470px);
+    transform: translate(-50%, -50%);        
+}
+}
+

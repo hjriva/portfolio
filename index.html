@@ -4,21 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>portfólio hjriva</title>
-    <link rel="stylesheet" href="estilos\style.css">
+    <link rel="stylesheet" href="estilos\stylemob.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
-    <div id="container">
+
+ <!-- Eu precisei dessas duas divs por causa do CSS, para fazer o flex de forma correta.
+  O Chat GPT me disse que não era uma boa prática para o HTML, mas não consegui ver outra alternativa.-->
+    
         <div id="containerup">
-    <header>
-    <img src="imgs\profilepicture.jpg" alt="">
-    <div id="descr">
-    <h1>Portfólio <br> de Helena Riva &lt;/&gt;</h1>
-        <h3>RS, Brasil</h3>
-    </div>
-    </header>
+
+            <!-- Primeiro elemento da página, com h1 e foto -->
+            <header>
+                <img src="imgs\profilepicture.jpg" alt="">
+                    <div id="descr">
+                        <h1>Portfólio <br> de Helena Riva &lt;/&gt;</h1>
+                        <h3>RS, Brasil</h3>
+                    </div>
+            </header>
+
+    
     <div id="consolediv">
-        <nav> <span id="homespan"> <a href="index.html">Sobre mim</a></span>  <span id="cttlink"id="cttspan">Contato</span> <span id="hablink">Habilidades</a> </nav>
+        <nav> <span id="homespan"> <a href="index.html">Sobre</a></span>  <span id="cttlink">Contato</span> <span id="hablink">Habilidades</span> </nav>
         <section id="consolecontent">
         <h3>hjriva <i class="fa-solid fa-terminal"></i> Desenvolvedora fullstack em formação</h3>
         <p>Estudante de Análise e Desenvolvimento de Sistemas</p>
@@ -33,7 +40,7 @@
         <i class="fa-brands fa-python" id="pythonicon"></i>
         </div>
         
-        <p><a href="#" download> <i class="fa-solid fa-download"></i> Baixar currículo em PDF</a></p>
+        <p><a href="imgs/cv helena.pdf" download> <i class="fa-solid fa-download"></i> Baixar currículo em PDF</a></p>
         <p><a href="https://github.com/hjriva" target="_blank"> <i class="fa-brands fa-github"></i> Acessar meu perfil no Github</a></p>
         </section>
         </div>
@@ -78,7 +85,7 @@
 
 </div>
     </article>
-      </div>
+     
 <script src="scripts\script.js"></script>
 </body>
 </html>
