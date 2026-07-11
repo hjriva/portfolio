@@ -34,7 +34,7 @@ async function SubmitForm(e, formulario, div) {
         e.preventDefault();
         const formData = new FormData(formulario);
         try {
-            const response = await fetch('https://api.staticforms.xyz/submit', {
+            const response = await fetch('https://api.staticforms.dev/submit', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({
