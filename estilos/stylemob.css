@@ -33,6 +33,7 @@ img {
     max-height: 90px;
     max-width: 100px;
     display: block;  
+    border-radius: 15px;
 }
 
 #descr {
@@ -48,10 +49,16 @@ img {
 #consolediv {
     background-color: black;
     width: 700px;
-    height: 490px;
+    /*height: 490px;*/
     display: flex;
     flex-direction: column;
     margin: auto;
+    
+}
+
+
+#consolediv > p  {
+    text-align: center;
 }
 
 nav {
@@ -69,6 +76,7 @@ nav > a {
     border-radius: 10px 10px 0 0; 
     margin: 0px 0.5px;
     cursor: pointer;
+    width: 30%;
    
 }
 
@@ -86,7 +94,7 @@ nav > a:hover {
 }
 
 #consolecontent {
-    padding: 8px;
+    padding: 2px 50px 2px 50px;
     flex: 1; /* ocupa o espaço restante */
     display: flex;
     flex-direction: column;
@@ -121,6 +129,7 @@ nav > a:hover {
 #pythonicon {
     color: #3475a9
 }
+
 section > p > a:hover {
    text-decoration: underline;
    color: #8a8989;;
@@ -137,12 +146,15 @@ input, textarea {
     background-color: #00000000;
     border-radius: 5px;
     color: white;
-    border: 2px solid #2B2B2B;
+    border: 1px solid #2B2B2B;
 }
 
 textarea {
     margin: 5px auto;
     resize: none;
+    width: 90%;
+    text-align: center;
+
 }
 
 #ctt_msg {
@@ -151,6 +163,12 @@ textarea {
     justify-content: center;
     align-items: center;
     flex-direction: column
+}
+
+#nome_ctt, #email_ctt {
+    width: 90%;
+    text-align: center;
+    padding: 8px 5px;
 }
 
 #h1contato {
@@ -165,12 +183,50 @@ text-align: center;
 margin-bottom: 5px;
 }
 
-/*Página de habilidades:*/
+.campo {
+   
+        margin: 35px 2px;
+    display: flex
+;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+cite{
+    text-align: right;
+}
+
+#skills_quote {
+    padding: 2px;
+    text-align: right;
+}
+
+.campo > label {
+    margin: 5px 2px;
+}
+
+.campo > input {
+   width: 50%;
+   min-width: 190px
+}
+
+#botao-enviar:hover {
+    box-shadow: 1px 1px 10px #666a79;
+}
+
+#botao-enviar {
+    margin-top: 35px;
+    cursor: pointer;
+}
+
+/*Página de habilidades:
 
 #lista {
     display: grid; 
     grid-template-columns: 1fr 1fr;
-}
+}*/
 
 /*Parte de projetos:*/
 article > h2 {
@@ -183,6 +239,17 @@ article > h2 {
     padding: 8px;
     margin: 10px;
 }
+
+.projectdiv > a:hover {
+    color: white;
+}
+
+.projectdiv > span {
+    background-color: rgb(61, 61, 61);
+    padding: 2px 5px;
+    border-radius: 30px;
+}
+
 
 /*Media queries*/
 @media (max-width: 713px) and (min-width:250px) {
@@ -207,38 +274,42 @@ article > h2 {
     }
    }
 
-   @media (min-width: 1150px) {
-    #consolediv {
-    background-color: black;
-    width: 700px;
-    height: 490px;
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+@media (max-width: 400px) and (min-width: 249px) {
+    nav > a {
+        width: fit-content;
+    }
 }
 
+@media (min-width: 1150px) {
     #containerup {
-    display: flex;
-    position: relative;
-    height: 80vh; 
-}
+        display: grid;
+        grid-template-columns: 1fr auto 1fr; 
+        align-items: center;
+        min-height: 80vh;
+    }
 
-header {
-    margin: 15px 5px;
-    display: flex;
-    flex-direction: column;
-    align-items: end;   
-    position: absolute;
-    top: 50%;
-    left: calc(50% - 470px);
-    transform: translate(-50%, -50%);        
-}
+    header {
+        grid-column: 1;
+        justify-self: end;   
+        margin: 0 20px 0 0;  
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
 
-#descr {
-    text-align: right;
-}
-}
+    #descr {
+        text-align: right;
+    }
 
+    #consolediv {
+        grid-column: 2;
+        background-color: black;
+        width: 1000px;
+        height: 760px;
+        display: flex;
+        flex-direction: column;
+    }
+
+
+}
+   
