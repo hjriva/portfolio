@@ -85,7 +85,7 @@ nav > a:hover {
 }
 
 #homespan {
-    margin-left: 5px;
+    
     background-color: black;
 }
 
@@ -174,9 +174,14 @@ textarea {
 #h1contato {
     text-align: center;
     font-size: 18pt;
-    margin: 0 0 15px 0;
+    margin: 15px 0 15px 0;
 }
 
+#h2contato {
+    text-align: center;
+    font-size: 15pt;
+    margin: 0 0 15px 0;
+}
 #ctt_msg > label {
 display: block;
 text-align: center;
@@ -192,6 +197,9 @@ margin-bottom: 5px;
     justify-content: center;
     align-items: center;
 
+}
+#feedback-form {
+    margin-top: 30px;
 }
 
 cite{
@@ -210,6 +218,18 @@ cite{
 .campo > input {
    width: 50%;
    min-width: 190px
+}
+
+#contatomail > a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+#mail {
+    font-size:15px;
+    display: block;
+    text-align: center;
+    margin-top: 10px;
 }
 
 #botao-enviar:hover {
@@ -246,8 +266,11 @@ article > h2 {
 
 .projectdiv > span {
     background-color: rgb(61, 61, 61);
-    padding: 2px 5px;
+    padding: 3px 8px;
     border-radius: 30px;
+    margin: 2px;
+    margin: 5px 0px;
+    display: inline-block;
 }
 
 
@@ -255,12 +278,11 @@ article > h2 {
 @media (max-width: 713px) and (min-width:250px) {
         #consolediv {
         width: 90vw;
-        max-height: 100vh;
+        
         }
 
         #containerup {
-            height: auto;
-            max-height: 90vh;
+          
             width: auto;
         }
         * {
@@ -308,6 +330,11 @@ article > h2 {
         height: 760px;
         display: flex;
         flex-direction: column;
+    }
+
+    .projetos {
+        width: 80vw;
+        margin: auto;
     }
 
 
